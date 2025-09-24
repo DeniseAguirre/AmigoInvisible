@@ -72,7 +72,7 @@ npm run format
 
 1. Clonar el repositorio:
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone (https://github.com/DeniseAguirre/AmigoInvisible.git)
 ```
 
 2. Instalar dependencias:
