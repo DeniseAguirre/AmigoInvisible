@@ -23,7 +23,7 @@ src/
 ├── services/       # Servicios y APIs
 ├── utils/         # Utilidades y helpers
 ├── types/         # Definiciones de TypeScript
-└── context/       # Contextos de React
+└── store/         # Estados Zustand
 ```
 
 ### Dependencias Principales
