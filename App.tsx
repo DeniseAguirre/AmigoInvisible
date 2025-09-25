@@ -5,13 +5,14 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "./src/screens/Home/HomeScreen";
+import { LoginScreen } from "@/screens/Auth/LoginScreen";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <SafeAreaProvider>
+    <SafeAreaProvider>
+      <NavigationContainer>
         <StatusBar style="auto" />
         <Stack.Navigator
           initialRouteName="Home"
@@ -20,10 +21,10 @@ export default function App() {
           }}
         >
           <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Login" component={HomeScreen} />
+          <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="Register" component={HomeScreen} />
         </Stack.Navigator>
-      </SafeAreaProvider>
-    </NavigationContainer>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }

@@ -1,24 +1,22 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { View, Image } from "react-native";
 import { Button } from "../../components/ui/Button";
 import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import "../../../global.css";
 
 import { RootStackParamList } from "../../types/navigation";
+import { Title } from "@/components/ui/Title";
+import { Container } from "@/components/ui/Container";
 type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 export const HomeScreen = () => {
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
   return (
-    <SafeAreaView className="flex-1 bg-red">
+    <Container>
       <View className="flex-1 p-5 items-center justify-between">
-        <Text className="text-3xl font-bold text-gray-800 mt-10">
-          Amigo Invisible
-        </Text>
-
+        <Title title="Amigo Invisible" />
         <Image
           source={require("../../../assets/home.png")}
           className="w-full h-[300px] my-10"
@@ -42,6 +40,6 @@ export const HomeScreen = () => {
           </View>
         </View>
       </View>
-    </SafeAreaView>
+    </Container>
   );
 };
