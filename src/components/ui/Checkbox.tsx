@@ -15,9 +15,7 @@ export const Checkbox = React.memo(
         <Pressable
           onPress={() => onValueChange(!value)}
           className={`h-6 w-6 items-center justify-center rounded border-2 ${
-            value
-              ? "bg-secondary-500 border-secondary-500"
-              : "border-neutral-300"
+            value ? "bg-primary-500 border-primary-500" : "border-neutral-300"
           }`}
         >
           {value && (
