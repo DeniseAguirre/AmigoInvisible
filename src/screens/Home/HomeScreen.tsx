@@ -24,13 +24,13 @@ export const HomeScreen = () => {
         />
 
         <View className="w-full space-y-5 mb-10">
-          <Button title="Empezar" onPress={() => {}} variant="primary" />
+          {/* <Button title="Empezar" onPress={() => {}} variant="primary" /> */}
 
-          <View className="flex-column justify-between space-x-2">
+          <View className="flex-column justify-between space-x-2 gap-2">
             <Button
               title="Iniciar Sesión"
               onPress={() => navigation.navigate("Login")}
-              variant="secondary"
+              variant="primary"
             />
             <Button
               title="Registrarse"

@@ -19,7 +19,10 @@ export const Container = React.memo(
     const Wrapper = useSafeArea ? SafeAreaView : View;
 
     return (
-      <Wrapper className={`flex-1 bg-red px-4 ${className}`} {...props}>
+      <Wrapper
+        className={`flex-1 bg-surface-background px-4 ${className}`}
+        {...props}
+      >
         {children}
       </Wrapper>
     );

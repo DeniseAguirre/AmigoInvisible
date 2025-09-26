@@ -52,7 +52,7 @@ export const RegisterScreen = () => {
 
   return (
     <Container>
-      <View className="flex-1 items-center justify-between p-5">
+      <View className="flex-1 items-center px-5">
         <Title title="Crear Nueva Cuenta" />
 
         <Formik
@@ -70,11 +70,11 @@ export const RegisterScreen = () => {
             setFieldValue,
             isSubmitting,
           }) => (
-            <View className="w-full space-y-5 gap-4">
+            <View className="w-full">
               <View className="gap-2">
                 <Image
                   source={require("../../../assets/register.png")}
-                  className="w-full h-[300px] my-5"
+                  className="w-full h-[250px]"
                   resizeMode="contain"
                 />
                 <Input
@@ -113,7 +113,7 @@ export const RegisterScreen = () => {
                   secureTextEntry
                 />
 
-                <View className="mb-4">
+                <View className="my-4">
                   <Checkbox
                     value={values.acceptTerms}
                     onValueChange={(value: boolean) =>
@@ -131,10 +131,10 @@ export const RegisterScreen = () => {
               />
 
               <View className="items-center mt-4">
-                <Text className="text-sm text-gray-600">
+                <Text className="text-sm text-neutral-600">
                   Ya tengo cuenta.{" "}
                   <Text
-                    className="text-cyan-500 font-semibold"
+                    className="text-secondary-500 font-semibold"
                     onPress={() => navigation.navigate("Login")}
                   >
                     Iniciar sesión

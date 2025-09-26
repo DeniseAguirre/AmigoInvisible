@@ -95,13 +95,13 @@ export const LoginScreen = React.memo(() => {
           <Pressable
             onPress={() => navigation.navigate("ForgotPassword" as never)}
           >
-            <Text className="text-lg text-center text-cyan-500">
+            <Text className="text-lg text-center text-secondary-500">
               Olvidé mi contraseña
             </Text>
           </Pressable>
 
           <Pressable onPress={() => navigation.navigate("Register" as never)}>
-            <Text className="text-lg text-center text-cyan-500">
+            <Text className="text-lg text-center text-secondary-500">
               Crear nueva cuenta
             </Text>
           </Pressable>
