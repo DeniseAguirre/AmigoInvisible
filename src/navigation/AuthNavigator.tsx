@@ -1,6 +1,7 @@
-import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { LoginScreen } from "@/screens/Auth/LoginScreen";
+import { RegisterScreen } from "@/screens/Auth/RegisterScreen";
+import { ForgotPasswordScreen } from "@/screens/Auth/ForgotPasswordScreen";
 
 /**
  * Lista de parámetros para el stack de autenticación
@@ -24,7 +25,8 @@ export function AuthNavigator() {
       }}
     >
       <Stack.Screen name="Login" component={LoginScreen} />
-      {/* Las pantallas Register y ForgotPassword se agregarán cuando se implementen */}
+      <Stack.Screen name="Register" component={RegisterScreen} />
+      <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
     </Stack.Navigator>
   );
 }
