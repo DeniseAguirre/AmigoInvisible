@@ -43,4 +43,5 @@ yarn-error.*
 # environment variables
 .env
 
-.env
+# copilot
+copilot-rules.md

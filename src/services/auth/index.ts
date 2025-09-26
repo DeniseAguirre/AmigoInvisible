@@ -181,3 +181,30 @@ class AuthService {
 }
 
 export const authService = new AuthService();
+
+// Funciones de utilidad exportadas para usar directamente
+export const createUserWithEmailAndPassword = async (
+  email: string,
+  password: string
+) => {
+  return authService.signUp({ email, password });
+};
+
+export const signInWithEmailAndPassword = async (
+  email: string,
+  password: string
+) => {
+  return authService.signIn({ email, password });
+};
+
+export const signOut = async () => {
+  return authService.signOut();
+};
+
+export const getCurrentUser = async () => {
+  return authService.getCurrentUser();
+};
+
+export const resetPassword = async (email: string) => {
+  return authService.resetPassword(email);
+};
